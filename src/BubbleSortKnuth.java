@@ -14,6 +14,11 @@ import java.util.Arrays;
 public class BubbleSortKnuth {
     public static void main(String[] args) {
         int[] arr = new int[]{5, 0, -2, 18, 37, 10, 3, 8};
+        sort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void sort(int[] arr) {
         int sortedIndex = arr.length;
         int numOfSwap = 1;
         while (numOfSwap > 0) {
@@ -28,6 +33,5 @@ public class BubbleSortKnuth {
             }
             sortedIndex -= 1;
         }
-        System.out.println(Arrays.toString(arr));
     }
 }
