@@ -11,6 +11,11 @@ import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
         int[] arr = new int[]{5, 0, -2, 10, 22, 8, 1, 4, 99};
+        sort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void sort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -24,6 +29,5 @@ public class SelectionSort {
                 arr[minIndex] = temp;
             }
         }
-        System.out.println(Arrays.toString(arr));
     }
 }
