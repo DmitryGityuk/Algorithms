@@ -10,14 +10,14 @@ public class BubbleSort {
                     int tmp = arr[i];
                     arr[i] = arr[i - 1];
                     arr[i - 1] = tmp;
-                    isSorted = true;
+                    isSorted = false;
                 }
             }
         }
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[]{5, 0, -2, 10, 1, 8};
+        int[] arr = new int[]{5, 0, -2, 10, -3, 8};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
