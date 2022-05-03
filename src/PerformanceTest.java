@@ -33,10 +33,12 @@ public class PerformanceTest {
         Utils.measureTime(() -> CombSort.combSort(arr4), "CombSort");
         Utils.measureTime(() -> MergeSort.mergeSort(arr5), "MergeSort");
         Utils.measureTime(() -> InsertionSort.insertionSort(arr6), "InsertionSort");
+        Utils.measureTime(() -> ShellSort.shellSort(arr7), "ShellSort");
         Utils.assertTrue(Arrays.equals(arr2, arr3));
         Utils.assertTrue(Arrays.equals(arr3, arr4));
         Utils.assertTrue(Arrays.equals(arr4, arr5));
         Utils.assertTrue(Arrays.equals(arr5, arr6));
+        Utils.assertTrue(Arrays.equals(arr6, arr7));
 
     }
 
