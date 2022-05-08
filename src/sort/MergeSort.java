@@ -1,3 +1,5 @@
+package sort;
+
 /**
  * Принцип работы алгоритма:
  * 1. Разбиваем исходынй массив на масиивы размером в 1 элемент.
@@ -31,7 +33,7 @@ public class MergeSort {
             currentSrc = currentDest;
             currentDest = tmp;
             size = size * 2;
-            System.out.println(arrayToString(currentSrc));
+//            System.out.println(arrayToString(currentSrc));
         }
         return currentSrc;
     }
