@@ -1,3 +1,5 @@
+package sort;
+
 import perfomance.Utils;
 
 import java.util.ArrayList;
@@ -34,12 +36,12 @@ public class PerformanceTest {
         Utils.measureTime(() -> MergeSort.mergeSort(arr5), "MergeSort");
         Utils.measureTime(() -> InsertionSort.insertionSort(arr6), "InsertionSort");
         Utils.measureTime(() -> ShellSort.shellSort(arr7), "ShellSort");
+        Utils.measureTime(() -> GnomeSort.gnomeSort(arr8), "GnomeSort");
         Utils.assertTrue(Arrays.equals(arr2, arr3));
         Utils.assertTrue(Arrays.equals(arr3, arr4));
         Utils.assertTrue(Arrays.equals(arr4, arr5));
         Utils.assertTrue(Arrays.equals(arr5, arr6));
         Utils.assertTrue(Arrays.equals(arr6, arr7));
-
+        Utils.assertTrue(Arrays.equals(arr7, arr8));
     }
-
 }
