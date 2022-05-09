@@ -28,6 +28,8 @@ public class PerformanceTest {
         System.arraycopy(arr1, 0, arr7, 0, arr1.length);
         int[] arr8 = new int[arr1.length];
         System.arraycopy(arr1, 0, arr8, 0, arr1.length);
+        int[] arr9 = new int[arr1.length];
+        System.arraycopy(arr1, 0, arr9, 0, arr1.length);
 
         Utils.measureTime(() -> BubbleSort.sort(arr1), "BubbleSort");
         Utils.measureTime(() -> BubbleSortKnuth.sort(arr2), "BubbleSort Knuth");
@@ -37,11 +39,13 @@ public class PerformanceTest {
         Utils.measureTime(() -> InsertionSort.insertionSort(arr6), "InsertionSort");
         Utils.measureTime(() -> ShellSort.shellSort(arr7), "ShellSort");
         Utils.measureTime(() -> GnomeSort.gnomeSort(arr8), "GnomeSort");
+        Utils.measureTime(() -> CountingSort.countingSort(arr9), "CountingSort");
         Utils.assertTrue(Arrays.equals(arr2, arr3));
         Utils.assertTrue(Arrays.equals(arr3, arr4));
         Utils.assertTrue(Arrays.equals(arr4, arr5));
         Utils.assertTrue(Arrays.equals(arr5, arr6));
         Utils.assertTrue(Arrays.equals(arr6, arr7));
         Utils.assertTrue(Arrays.equals(arr7, arr8));
+        Utils.assertTrue(Arrays.equals(arr8, arr9));
     }
 }
