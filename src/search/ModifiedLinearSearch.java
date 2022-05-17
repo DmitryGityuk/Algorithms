@@ -1,3 +1,5 @@
+package search;
+import static java.lang.System.out;
 /**
  * Такая модификация имеет смысл только для последовательносткй в которых вставка и удаление эдемента не связаны
  * с высокими вычислительными затратами.
@@ -21,8 +23,8 @@ public class ModifiedLinearSearch {
             sequence.add(arr[i]);
         }
         int element = 5;
-        System.out.println(modifiedLinearSearch(sequence, element));
-        System.out.println(sequence);
+        out.println(modifiedLinearSearch(sequence, element));
+        out.println(sequence);
     }
 
     private static int modifiedLinearSearch(List<Integer> sequence, int element) {
