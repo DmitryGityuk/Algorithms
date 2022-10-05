@@ -1,4 +1,4 @@
-package tasks.LeetCode;
+package tasks.LeetCode.tree;
 
 /**
  * 100. Same Tree

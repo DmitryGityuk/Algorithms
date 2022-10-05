@@ -1,12 +1,13 @@
 package sort;
 
 import java.util.Arrays;
+import static java.lang.System.out;
 
 public class CombSort {
     public static void main(String[] args) {
         int[] arr = new int[]{43, 56, 72, 90, 14, -23, 19, 27, 44, 1};
         combSort(arr);
-        System.out.println(Arrays.toString(arr));
+       out.println(Arrays.toString(arr));
     }
 
     public static void combSort(int[] arr) {

@@ -1,4 +1,4 @@
-package tasks.LeetCode;
+package tasks.LeetCode.math;
 
 /**
  * 9.

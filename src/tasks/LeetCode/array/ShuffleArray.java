@@ -1,4 +1,4 @@
-package tasks.LeetCode;
+package tasks.LeetCode.array;
 
 /**
  * 1470. Shuffle the Array

@@ -1,4 +1,4 @@
-package tasks.LeetCode;
+package tasks.LeetCode.array;
 
 import java.util.HashMap;
 import java.util.Map;

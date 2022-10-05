@@ -1,4 +1,4 @@
-package tasks.LeetCode;
+package tasks.LeetCode.string;
 
 /**
  * 125. Valid Palindrome

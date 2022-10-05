@@ -1,7 +1,7 @@
-package tasks.LeetCode;
+package tasks.LeetCode.string;
 
 /**
- * 14.
+ * 14.Longest Common Prefix
  * https://leetcode.com/problems/longest-common-prefix/
  */
 
